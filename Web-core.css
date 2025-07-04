@@ -299,9 +299,10 @@ margin-bottom: 24px;
 
 @media (min-width: 1120px) {
 .navigation{
-    width: auto;
+    width: 1063px;
     margin-left: 24px;
-    margin-bottom: 32px; 
+    margin-bottom: 16.22px; 
+    height: 82px;
 
   }}
 
@@ -310,11 +311,18 @@ list-style-type: none;
 overflow-x: scroll; /* задаем скрол бар внизу */
 scrollbar-width: none; /* убираем скрол бар */
 margin: 0;
+flex-wrap: nowrap;
  display:flex; 
  gap: 10px; 
 padding: 0;
 }
+@media (min-width: 1120px) {
+.navigation_ul{
+  flex-wrap: wrap;
+   overflow:inherit;
+   margin-bottom: 8px;
 
+  }}
 .navigation_li{
 display:flex;  
 justify-content:center;
