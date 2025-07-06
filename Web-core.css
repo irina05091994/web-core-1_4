@@ -26,6 +26,11 @@
     font-weight: normal;
 }
 .body{
+   display: flex;
+   flex-direction: column;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+     height: 100vh; /* Высота родительского элемента */
     margin:0;
     background-color: #F8F8F8;
     min-width: 320px;
@@ -33,7 +38,16 @@
     height: 100%;
     font-family: "TT LakesB", sans-serif;
     font-size: 16px;
-    
+}
+    @media (min-width: 1440px) {.body{
+    flex-direction: row;
+    margin: 0 auto;
+  }
+}
+.body-flow{
+ 
+  max-width: 1440px;
+  
 }
 
 .header-page {
@@ -44,6 +58,7 @@
     height: 88px;
     box-shadow: 0 1px 0 #D9FFF5; /* тень*/
     z-index: 2;
+    width: auto;
    
 
 }
@@ -61,7 +76,7 @@
 .header-page_left-group {
     display:flex;
     align-items: center;
-    flex-grow: 1;
+   
     gap:16px;}
 
 .header-page_right-group{
@@ -211,7 +226,7 @@
 
 
 .header-two_button_pn{ 
-display: flex;
+  display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   align-items: center;
@@ -251,6 +266,10 @@ display: flex;
   
   padding: 0;  
 }
+.header-two_button_active:hover
+{
+  color:#7e7e82;
+}
 .header-naw
 {
     
@@ -265,12 +284,23 @@ margin-right: 32px;
     }
 
 @media (min-width: 1120px) {
-    .header__nav {
+   .header__nav {
     display: contents;
     }
 }
 
 /* Задаем стили для меню навигации */
+.contener-navigation
+{
+overflow-x: scroll; /* задаем скрол бар внизу */
+scrollbar-width: none; /* убираем скрол бар */
+  position: relative;
+}
+ @media (min-width: 1120px) {
+  .contener-navigation{
+    display: flex;
+    overflow-x: auto;
+  }}
 .navigation_li:hover {
   border: 2px solid turquoise;
   border-radius: 6px;
@@ -284,7 +314,7 @@ margin-right: 32px;
 }
 
 .navigation{
-width: auto;   
+width: max-content;  
 height: 40px;
 padding: 0;
 margin-left: 16px;
@@ -293,7 +323,6 @@ margin-bottom: 24px;
 
 @media (min-width: 768px) {
 .navigation{
-  width: auto;
     margin-left: 32px;
     margin-bottom: 40px;  }}
 
@@ -301,57 +330,66 @@ margin-bottom: 24px;
 .navigation{
     width: 1063px;
     margin-left: 24px;
-    margin-bottom: 16.22px; 
     height: 82px;
-
+    flex-wrap: wrap; 
+    margin-bottom: 0;
+    display:flex; 
+ 
   }}
 
 .navigation_ul{
-list-style-type: none; 
-overflow-x: scroll; /* задаем скрол бар внизу */
-scrollbar-width: none; /* убираем скрол бар */
-margin: 0;
-flex-wrap: nowrap;
+  flex-wrap: nowrap;
  display:flex; 
- gap: 10px; 
-padding: 0;
+ 
+ padding: 0;
+  list-style-type: none; 
+  margin: 0;
+
 }
 @media (min-width: 1120px) {
 .navigation_ul{
   flex-wrap: wrap;
    overflow:inherit;
-   margin-bottom: 8px;
+   margin-bottom: 8px; 
 
   }}
 .navigation_li{
-display:flex;  
+display:flex;
+gap: 10px;   
 justify-content:center;
 flex-wrap: nowrap;
 align-items:center;   
 height: 40px;
-padding-left: 9px;
-padding-right: 9px;
-padding-bottom: 1px;
+box-sizing: border-box;
+width: auto;
+flex-direction: row;
+align-items: center;
+border: 2px solid transparent;
+background: #F8F8F8;
 }
 
 .navigation_a{
-background: #F8F8F8;
+
 text-align: center;
 font-size: 16px;
 font-family: "TT LakesM", sans-serif;
 font-weight: 500;
 color:  #7e7e82;
-width: auto;
 line-height: 24px;
 letter-spacing:-0.2px;
 text-decoration: none;
 white-space: nowrap;
-border: none;
+width: auto;
+padding: 8px 18px;
 margin:0;
-
 }
 
-  
+.navigation_li_decoration
+{
+  border: 2px solid turquoise;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
 
 /* Текст и изображение статьи */
 
@@ -362,7 +400,7 @@ margin:0;
 .one-block_text3 
 {
     font-family: "TT LakesR", sans-serif;
-    width: 288px;
+    width: auto;
     height: auto;
     font-weight: 400;
     font-size: 14px;
@@ -441,14 +479,13 @@ margin:0;
 
   /*динамика при наведении на кнопку далее*/
 .one-block_button-next:hover{
-    transition: all;
-    border: 2px solid #F8F8F8;
+    color:#7e7e82;
 }
 
 .one-block_img-cps
 {
     background-color: white;
-    width: 320px;
+    width: 100%;
     height: auto;
     Top:386px;
     padding: 0;
@@ -456,12 +493,11 @@ margin:0;
  /*добавляем радиус и меняем размеры изображения*/
     @media (min-width: 768px) {
         .one-block_img-cps{
-      width: 360px;
       border-radius: 6px;}
     }
   @media (min-width: 1120px) {
         .one-block_img-cps{
-      width: 531.35px;
+      width: 100%;
       }
     }
 
@@ -488,4 +524,5 @@ margin:0;
     gap: 36px;
     padding-left: 34px;
     padding-right: 29px;
+    margin-top: 16px;
   }}
