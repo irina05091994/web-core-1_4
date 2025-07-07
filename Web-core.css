@@ -1,21 +1,27 @@
 @font-face {
 	font-family: "TT LakesM";
 	src: url("fonts/TTLakes-Medium.eot");
-	src: url("fonts/TTLakes-Medium.eot?#iefix") format('embedded-opentype'),url("fonts/TTLakes-Medium.woff") format("woff"),url("fonts/TTLakes-Medium.ttf") format("truetype");
+	src: url("fonts/TTLakes-Medium.eot?#iefix") format('embedded-opentype'),
+  url("fonts/TTLakes-Medium.woff") format("woff"),
+  url("fonts/TTLakes-Medium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "TT LakesR";
 	src: url("fonts/TTLakes-Regular.eot");
-	src: url("fonts/TTLakes-Regular.eot?#iefix") format('embedded-opentype'),url("fonts/TTLakes-Regular.woff") format("woff"),url("fonts/TTLakes-Regular.ttf") format("truetype");
+	src: url("fonts/TTLakes-Regular.eot?#iefix") format('embedded-opentype'),
+  url("fonts/TTLakes-Regular.woff") format("woff"),
+  url("fonts/TTLakes-Regular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
 	font-family: "TT LakesB";
 	src: url("fonts/TTLakes-Bold.eot");
-	src: url("fonts/TTLakes-Bold.eot?#iefix") format('embedded-opentype'),url("fonts/TTLakes-Bold.woff") format("woff"),url("fonts/TTLakes-Bold.ttf") format("truetype");
+	src: url("fonts/TTLakes-Bold.eot?#iefix") format('embedded-opentype'),
+  url("fonts/TTLakes-Bold.woff") format("woff"),
+  url("fonts/TTLakes-Bold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
@@ -54,19 +60,20 @@
 	width: auto;
 }
 @media (min-width: 1120px) {
-	.header-page_button {
+	.header-page_hide {
 		display: none;
-	}
-}
-@media (min-width: 768px) {
-	.header-page {
-		max-width: 1440px;
 	}
 }
 .header-page_left-group {
 	display:flex;
 	align-items: center;
 	gap:16px;
+  margin-left: 16px;
+}
+@media (min-width: 768px) {
+	.header-page_left-group{
+		margin-left: 24px;
+	}
 }
 .header-page_right-group{
 	display: flex;
@@ -86,25 +93,22 @@
 }
 .button-header_burger-menu{
 	background-image: url(img/burger.svg);
-	margin-left: 16px;
 	order:0;
 	flex-shrink: 0;
 }
 @media (min-width: 768px) {
 	.button-header_burger-menu{
 		order:-3;
-		margin-left: 24px;
 	}
 }
-.header-page_logo{
-	margin: 0;
+.img-header_logo{
 	width: 96.55px;
 	height: 50.81px;
 	order:0;
 	flex-shrink: 0;
 }
 @media (min-width: 768px) {
-	.header-page_logo{
+	.img-header_logo {
 		order:-1;
 	}
 }
@@ -122,21 +126,21 @@
 	background-image: url(img/profile.svg);
 	order:0;
 }
-.header-page_ccp {
+.container-button_ccp {
 	display: none;
 }
 @media (min-width: 768px) {
-	.header-page_ccp {
+	.container-button_ccp {
 		display: flex;
 		gap:16px;
 		margin-left: auto;
 	}
 }
-.header-page_divider_order{
+.img-header_divider_order{
 	order:0;
 }
 @media (min-width: 768px) {
-	.header-page_divider_order{
+  .img-header_divider_order{
 		order:-2;
 		padding-right:0;
 	}
