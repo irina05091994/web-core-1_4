@@ -1,3 +1,4 @@
+
 @font-face {
 	font-family: "TT LakesM";
 	src: url("fonts/TTLakes-Medium.eot");
@@ -60,29 +61,29 @@
 	width: auto;
 }
 @media (min-width: 1120px) {
-	.header-page_hide {
+	.header-page--hide {
 		display: none;
 	}
 }
-.header-page_left-group {
+.header-page__left-group {
 	display:flex;
 	align-items: center;
 	gap:16px;
-  margin-left: 16px;
+    margin-left: 16px;
 }
 @media (min-width: 768px) {
-	.header-page_left-group{
+	.header-page__left-group{
 		margin-left: 24px;
 	}
 }
-.header-page_right-group{
+.header-page__right-group{
 	display: flex;
 	margin-left: auto;
 	justify-content: flex-end;
 	flex-grow: 1;
 	gap:16px;
 }
-.button-header{
+.button-lap{
 	background-color: white;
 	border: none;
 	width: 40px;
@@ -91,66 +92,66 @@
 	box-shadow: none;
 	background-repeat: no-repeat;
 }
-.button-header_burger-menu{
+.button-lap--burger-menu{
 	background-image: url(img/burger.svg);
 	order:0;
 	flex-shrink: 0;
 }
 @media (min-width: 768px) {
-	.button-header_burger-menu{
+	.button-lap--burger-menu{
 		order:-3;
 	}
 }
-.img-header_logo{
+.logo-company{
 	width: 96.55px;
 	height: 50.81px;
 	order:0;
 	flex-shrink: 0;
 }
 @media (min-width: 768px) {
-	.img-header_logo {
+	.logo-company {
 		order:-1;
 	}
 }
-.button-header_call{
+.button-lap--call{
 	background-image: url(img/call.svg);
 	margin:0;
 	order:0;
 }
-.button-header_chat{
+.button-lap--chat{
 	background-image: url(img/chat.svg);
 	flex-shrink: 0;
 	order:0;
 }
-.button-header_profile{
+.button-lap--profile{
 	background-image: url(img/profile.svg);
 	order:0;
 }
-.container-button_ccp {
+.container-button--hide {
 	display: none;
 }
 @media (min-width: 768px) {
-	.container-button_ccp {
+	.container-button--hide {
 		display: flex;
 		gap:16px;
 		margin-left: auto;
 	}
 }
-.img-header_divider_order{
+.divider--order{
 	order:0;
 }
 @media (min-width: 768px) {
-  .img-header_divider_order{
+  .divider--order{
 		order:-2;
 		padding-right:0;
 	}
 }
-.button-header_repair{
+.button-lap--repair{
 	background-image: url(img/repair.svg);
 	flex-shrink: 0;
 	order:0;
 }
-.button-header_checkstatus {
+.button-lap--checkstatus {
 	background-image: url(img/checkstatus.svg);
 	flex-shrink: 0;
 	order: 0;
@@ -175,7 +176,7 @@
 	}
 }
 /*Задаем стили для заголовка */
-.Title-copy_h1{
+.Title-copy__h1{
 	font-family: "TT LakesB", sans-serif;
 	Width:auto;
 	Height:40px;
@@ -202,7 +203,7 @@
 		padding-left: 30px;
 	}
 }
-.header-two_button_pn{
+.header-two__button-caption{
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
@@ -218,7 +219,7 @@
 	padding:0;
 	flex-shrink: 0;
 }
-.button-header-two{
+.button-caption{
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
@@ -230,21 +231,17 @@
 	background-position: center;
 	padding: 0;
 }
-.header-two_button_checkstatus{
+.button-caption--checkstatus{
 	margin-right: 32px;
 	flex-shrink: 0;
 }
-.header-two_button_repair{
+.button-caption--repair{
 	padding: 0;
 }
-.header-two_button_active:hover{
+.button-caption--active:hover{
 	color:#7e7e82;
 }
-.header-naw{
-	margin-top: 42px;
-	width: 100%;
-	margin-right: 32px;
-}
+
 .header__nav {
 	display: none;
 }
@@ -265,12 +262,12 @@
 		overflow-x: auto;
 	}
 }
-.navigation_li:hover {
+.navigation__li:hover {
 	border: 2px solid turquoise;
 	border-radius: 6px;
 	background: #FFFFFF;
 }
-.navigation_li:active {
+.navigation__li:active {
 	border: 2px solid turquoise;
 	border-radius: 6px;
 	background: #FFFFFF;
@@ -290,7 +287,7 @@
 }
 @media (min-width: 1120px) {
 	.navigation{
-		width: 1063px;
+		width: auto;
 		margin-left: 24px;
 		height: 82px;
 		flex-wrap: wrap;
@@ -298,7 +295,7 @@
 		display:flex;
 	}
 }
-.navigation_ul{
+.navigation__ul{
 	flex-wrap: nowrap;
 	display:flex;
 	padding: 0;
@@ -306,13 +303,13 @@
 	margin: 0;
 }
 @media (min-width: 1120px) {
-	.navigation_ul{
+	.navigation__ul{
 		flex-wrap: wrap;
 		overflow:inherit;
 		margin-bottom: 8px;
 	}
 }
-.navigation_li{
+.navigation__li{
 	display:flex;
 	gap: 10px;
 	justify-content:center;
@@ -326,7 +323,7 @@
 	border: 2px solid transparent;
 	background: #F8F8F8;
 }
-.navigation_a{
+.navigation__a{
 	text-align: center;
 	font-size: 16px;
 	font-family: "TT LakesM", sans-serif;
@@ -340,13 +337,13 @@
 	padding: 8px 18px;
 	margin:0;
 }
-.navigation_li_decoration{
+.navigation__li--decoration{
 	border: 2px solid turquoise;
 	border-radius: 6px;
 	background: #FFFFFF;
 }
 /* Текст и изображение статьи */
-.one-block_text1,.one-block_text2,.one-block_text3{
+.one-block__text1,.one-block__text2,.one-block__text3{
 	font-family: "TT LakesR", sans-serif;
 	width: auto;
 	height: auto;
@@ -356,47 +353,46 @@
 	letter-spacing: 0.2px;
 	margin: 0;
 }
-.one-block_text-container{
+.one-block__text-container{
 	padding: 0px 16px;
 	display: flex;
 	flex-direction: column;
 }
 @media (min-width: 768px) {
-	.one-block_text-container{
+	.one-block__text-container{
 		padding: 0px;
 	}
 }
 /*убираем лишний текст*/
-.one-block_text2,.one-block_text3 {
+.one-block__text2,.one-block__text3 {
 	display: none;
 }
 @media (min-width: 768px) {
-	.one-block_text3 {
+	.one-block__text3 {
 		display: none;
 	}
-	.one-block_text1,.one-block_text2{
+	.one-block__text1,.one-block__text2{
 		width: 312px;
 		display: contents;
 	}
 }
 @media (min-width: 1120px) {
-	.one-block_text3 {
+	.one-block__text3 {
 		display: contents;
 	}
-	.one-block_text1,.one-block_text2{
+	.one-block__text1,.one-block__text2{
 		width: 490px;
 	}
 }
-.one-block_button{
-	width: 24px;
-	height: 24px;
+.one-block__button-next{
+	
 	background: none;
 	border: none;
 	margin:0;
 	padding:0;
-}
-.one-block_button-next{
 	display: flex;
+	justify-content:center;
+	align-items:center;
 	gap: 8px;
 	width: 132px;
 	height: 24px;
@@ -404,18 +400,20 @@
 	white-space: nowrap;
 	font-weight: 500;
 	font-size: 16px;
+	color: #1B1C21;
 }
+
 /*настраиваем отступ*/
 @media (min-width: 768px) {
-	.one-block_button-next {
+	.one-block__button-next {
 		margin-top: 14px;
 	}
 }
 /*Ховер при наведении на кнопку далее*/
-.one-block_button-next:hover{
+.one-block__button-next:hover{
 	color:#7e7e82;
 }
-.one-block_img-cps{
+.one-block__img-cps{
 	background-color: white;
 	width: 100%;
 	height: auto;
@@ -424,12 +422,12 @@
 }
 /*добавляем радиус и меняем размеры изображения*/
 @media (min-width: 768px) {
-	.one-block_img-cps{
+	.one-block__img-cps{
 		border-radius: 6px;
 	}
 }
 @media (min-width: 1120px) {
-	.one-block_img-cps{
+	.one-block__img-cps{
 		width: 100%;
 	}
 }
