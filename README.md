@@ -7,4 +7,6 @@
 https://irina05091994.github.io/web-core-1_4/index.html_burger-menu.html
 
 .GitHub Pages swiper  1.5
+/* при изменении адаптивного экрана от большего к меньшему свайпер работает после перезагрузки страницы
 https://irina05091994.github.io/web-core-1_4/index.html_swiper.html
+.GitHub Pages обновляется, на данный момент 1.5 доступен по ссылке: https://irina05091994.github.io/web-core-1_4/
