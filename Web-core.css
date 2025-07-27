@@ -103,7 +103,8 @@
 
   @media (min-width: 1440px) {
 	.burger-menu--static{
-    	display: block;
+    	/*display: block;*/
+		display:flex;
    		box-shadow: none;
     	position: static;
     	z-index: 1;
@@ -319,6 +320,7 @@ opacity: 0.5;
 	padding: 0;
 	box-shadow: none;
 	background-repeat: no-repeat;
+	border-radius: 50%;
 }
 .button-lap--burger-menu{
 	background-image: url(img/burger.svg);
@@ -685,3 +687,253 @@ opacity: 0.5;
 		margin-top: 16px;
 	}
 }
+
+
+/*пишем стили для кнопок с брендами*/
+
+/* оформляем заглоловок */
+
+.title{
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-content: flex-start;
+	width: 100%;
+	height: 80px;
+	margin-bottom: 16px;
+	margin-left: 16px;
+	background: linear-gradient(to right, #F8F8F8, #FFFFFF);
+}
+@media (min-width: 768px) {
+	.title{
+        height: 56px;
+		margin-bottom: 24px;
+		margin-left: 24px;}
+	}
+@media (min-width: 1120px) {
+	.title{
+		margin-left: 32px;}
+	}
+
+.title__h2{
+	font-size: 16px;
+	font-family: "TT LakesR", sans-serif;
+	font-weight: 400;
+	color: #7e7e82;
+	line-height: 24px;
+	letter-spacing:-0.2px;
+	text-transform: uppercase;
+	margin: 16px;
+	padding: 16px 0;
+}
+
+/* секция с карточками и кнопкой показать скрыть */
+.menu-card{
+	display: flex;
+	width: auto;
+	flex-direction: column;
+	gap:16px;
+	align-self: start;
+}
+
+/*кнопки с брендами*/
+.button-card{
+	width: 240px;
+	height: 72px;
+	background-repeat: no-repeat;
+	background-color: #FFFFFF;
+	border: 1px solid #EAEAEA;
+	padding-left: 16px;
+	background-position: 16px;
+	border-radius: 6px;
+	display: flex;
+	gap: 16px;
+  	flex-wrap: nowrap;
+  	align-items: center;
+  	justify-content: end;
+	margin:0;
+}
+
+
+.button-card--lenovo{
+	background-image: url(img/lenovo.svg);
+}
+.button-card--samsung{
+	background-image: url(img/samsung.svg);
+}
+.button-card--apple{
+	background-image: url(img/apple.svg);
+}
+.button-card--viewsonic{
+	background-image: url(img/viewsonic.svg);
+}
+.button-card--bosch{
+	background-image: url(img/bosch.svg);
+}
+.button-card--hp{
+	background-image: url(img/hp.svg);
+}
+.button-card--acer{
+	background-image: url(img/acer.svg);
+}
+.button-card--sony{
+	background-image: url(img/sony.svg);
+}
+/*кнопка далее-бренды*/
+.button-lap--go{
+	background-image: url(img/go.svg);
+}
+
+
+
+.fide-copy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to left, #F8F8F8, transparent);
+    pointer-events: none;
+    z-index: 2;
+}
+@media (min-width: 768px) {
+	.fide-copy::after{
+      display: none;}
+}
+.swiper {
+    overflow: hidden;
+	margin:0;
+	width: 320px;
+	height: auto;
+  }
+
+  .swiper-slide {
+	width: 270px;
+    height: 72px;
+	margin:0;
+  }
+ 
+  #card{
+	display: flex;
+	align-items:center;
+	flex-wrap: nowrap;
+	margin-top: 0;
+    margin-left: 16px;
+    margin-right: 16px;
+	padding:0;
+	width: 320px;
+}
+@media (min-width: 768px) {
+	#card{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 24px;
+	row-gap: 16px;
+	align-items:center;
+	justify-content:center;
+	width: auto;
+	overflow: visible;
+	margin-left:24px;
+	margin-top: 24px;
+    margin-right: 24px;
+	}
+}
+@media (min-width: 1120px) {
+	#card{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 32px;
+	width: auto;
+	overflow: visible;
+	margin-left: 32px;
+    margin-right: 32px;
+	}
+}
+.swiper-pagination {
+	position: static;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+.swiper-pagination {
+	display: none;}
+  }
+
+
+  /*кнопка показать все-бренды*/
+.button-learn-more{
+	background: none;
+	border: none;
+	margin:0;
+	padding:0;
+	width: 132px;
+	height: 24px;
+	font-family: "TT LakesM", sans-serif;
+	white-space: nowrap;
+	font-weight: 500;
+	font-size: 16px;
+	color: #1B1C21;
+	margin-left: 24px;
+}
+
+.button-learn-more:hover{
+	color:#7e7e82
+}
+
+.button-learn-more--show{
+	display: none;
+}
+
+@media (min-width: 768px){
+	.button-learn-more--show,
+	.button-learn-more--hide{
+		display: flex;
+		justify-content:center;
+		align-items:center;
+		gap: 8px;
+		position:absolute;
+		z-index: 1;
+	}
+
+   .button-learn-more--show{
+		transform: translateY(-180px);
+	}
+	.button-learn-more--hide{
+	transform: translateY(0);}
+	}
+@media (min-width: 1120px){
+	.button-learn-more--show{
+		transform: translateY(-110px);
+		margin-left: 32px;
+	}
+	.button-learn-more--hide{
+		transform: translateY(0px);
+		margin-left: 32px;}
+}
+
+
+
+.button-learn-more__img--rotate{
+	transform: rotateX(180deg);
+}
+
+ .show-conteiner-hidden{
+	margin: 0;
+ }
+@media (min-width: 768px) {
+	.show-conteiner--hidden{
+		min-width: auto;
+    	height: 200px;
+		overflow-y: hidden;
+		transition: all 5s;
+	}
+}
+
+.show-conteiner {
+		height: auto;
+		max-height: 500px;
+		overflow: auto;
+}
+.transition{
+		transition: all 5s;
+}	
