@@ -78,4 +78,3 @@ button.addEventListener('click', () => {
 
   isOpen = !isOpen; // Переключаем состояние
 });
-
