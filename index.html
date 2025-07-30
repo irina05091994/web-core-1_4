@@ -4,13 +4,14 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="Web-core.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
       <title>Project</title>
     </head>
     <body class="body">
         <div class="burger-menu__position">
-         <aside class="burger-menu burger-menu--static">
+         <aside id="burgerMenu" class="burger-menu burger-menu--static burger-menu--hide">
             <header class="burger-menu__header">
-                <button class="button-lap button-lap--close" onclick="document.getElementById('menuToggle').checked = false;">
+                <button id="buttonClose" class="button-lap button-lap--close button-lap--hide" onclick="document.getElementById('menuToggle').checked = false;">
                     <span aria-label="Закрыть меню"></span>
                 </button>
                 <img class="logo-company" src="img/Group.svg" alt="Company Logo">
@@ -18,58 +19,66 @@
                     <span aria-label="Поиск"></span>
                 </button>
             </header>
-            <ul class="burger-menu__ul">
-                <li class="burger-menu__li"> 
+            <nav>
+                <ul class="burger-menu__ul">
+                   <li class="burger-menu__li"> 
                     <a class="burger-menu__a" href="#"> Ремонт техники</a>
-                </li>
-             <li class="burger-menu__li"> 
-                <a class="burger-menu__a"href="#"> Услуги и сервисы
-                </a>
-              </li>
-             <li class="burger-menu__li"> 
-                <a class="burger-menu__a"href="#"> Корпоративным клиентам
-                </a>
-              </li>
-              <li class="burger-menu__li">
-                <a class="burger-menu__a"href="#"> Продавцам техники
-                </a>
-              </li>
-              <li class="burger-menu__li">
-                <a class="burger-menu__a"href="#"> Партнерам
-                </a>
-              </li>
-              <li class="burger-menu__li">
-                <a class="burger-menu__a"href="#"> Производителям
-                </a>
-              </li>
-              <li class="burger-menu__li">
-                <a class="burger-menu__a"href="#"> Наши сервисные центры
-                </a>
-              </li>
-              <li class="burger-menu__li">
-                <a class="burger-menu__a"href="#"> Контакты
-                </a>
-              </li>
-              </ul>
+                  </li>
+                  <li class="burger-menu__li"> 
+                    <a class="burger-menu__a"href="#"> Услуги и сервисы
+                    </a>
+                  </li>
+                  <li class="burger-menu__li"> 
+                    <a class="burger-menu__a"href="#"> Корпоративным клиентам
+                    </a>
+                  </li>
+                  <li class="burger-menu__li">
+                     <a class="burger-menu__a"href="#"> Продавцам техники
+                     </a>
+                  </li>
+                  <li class="burger-menu__li">
+                    <a class="burger-menu__a"href="#"> Партнерам
+                    </a>
+                  </li>
+                  <li class="burger-menu__li">
+                    <a class="burger-menu__a"href="#"> Производителям
+                    </a>
+                  </li>
+                  <li class="burger-menu__li">
+                   <a class="burger-menu__a"href="#"> Наши сервисные центры
+                   </a>
+                  </li>
+                  <li class="burger-menu__li">
+                    <a class="burger-menu__a"href="#"> Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
               <footer class="burger-menu__footer">
-                 <div class="conteiner-button-lap">
-                   <button class="button-lap button-lap--call">
-                     <span aria-label="Контакты"></span>
-                   </button>
-                   <button class="button-lap button-lap--chat">
-                     <span aria-label="Написать сообщение в чат"></span>
-                   </button>
-                   <button class="button-lap button-lap--profile">
-                     <span aria-label="Мой профиль"></span>
-                   </button>
-                 </div>
+                <ul class="conteiner-button-lap">
+                      <li>
+                        <button class="button-lap button-lap--call">
+                           <span aria-label="Контакты"></span>
+                        </button>
+                      </li>
+                      <li>
+                        <button class="button-lap button-lap--chat">
+                          <span aria-label="Написать сообщение в чат"></span>
+                       </button>
+                      </li>
+                       <li>
+                          <button class="button-lap button-lap--profile">
+                           <span aria-label="Мой профиль"></span>
+                          </button>
+                        </li>
+                    </ul>
                  <address class="burger-menu__address">
                    <a class="burger-menu__mail burger-menu--hover"href="mail@cps.com"> mail@cps.com
                    </a>
                    <a class="burger-menu__phone burger-menu--hover"href="8 800 890 8900"> 8 800 890 8900
                    </a>
                  </address>
-                 <ul class="burger-menu__list-lang">
+                 <ul class="list-lang">
                     <li>
                      <button class="button-lang burger-menu--hover"> RU
                        <span aria-label="Выбрать русский язык"></span>
@@ -93,7 +102,7 @@
         <header class="header">
           <section class="header-page header-page--hide">
             <div class="header-page__left-group">  
-              <button class="button-lap button-lap--burger-menu">
+              <button id="buttonOpen" class="button-lap button-lap--burger-menu">
                  <span aria-label="Бургер меню"></span>
                 </button>
               <img class="logo-company logo-company--order" src="img/Group.svg" alt="Company Logo">
@@ -181,7 +190,78 @@
             </div>
             <img class="one-block__img-cps" src="img\photologo.jpg" alt="Фотография логотипа компании cps">
           </article>
+          <section class="section-card"> 
+              <div class="title">
+                 <h2 class="title__h2">Ремонт техники различных брендов</h2>
+              </div>
+              <div class="show-conteiner--hidden">
+                <div id="buttonsMenu" class="buttons-menu fide-copy swiper">
+                      <ul  class=" card swiper-wrapper" id="card">
+                        <li class="swiper-slide">
+                           <button class="button-card button-card--lenovo">
+                             <img class=" button-lap button-lap--go" alt="" />
+                           </button>
+                         </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--samsung">
+                            <img class=" button-lap button-lap--go" alt="" />
+                         </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--apple">
+                              <img class=" button-lap button-lap--go" alt="" />
+                          </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--viewsonic">
+                            <img class=" button-lap button-lap--go" alt="" />
+                         </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--bosch">
+                            <img class=" button-lap button-lap--go" alt="" />
+                         </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--hp">
+                             <img class=" button-lap button-lap--go" alt="" />
+                          </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--acer">
+                            <img class=" button-lap button-lap--go" alt="" />
+                          </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--sony">
+                            <img class=" button-lap button-lap--go" alt="" />
+                         </button>
+                        </li>
+                        <li class="swiper-slide">
+                           <button class="button-card button-card--lenovo">
+                             <img class=" button-lap button-lap--go" alt="" />
+                           </button>
+                         </li>
+                        <li class="swiper-slide">
+                           <button class="button-card button-card--samsung">
+                             <img class=" button-lap button-lap--go" alt="" />
+                           </button>
+                        </li>
+                        <li class="swiper-slide">
+                          <button class="button-card button-card--apple">
+                            <img class=" button-lap button-lap--go" alt="" />
+                          </button>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <button id="showButton" class="button-learn-more button-learn-more--show"> 
+                   <img class="button-learn-more__img" src="img/expand.svg" alt="Развернуть/свернуть контент"> 
+                   <p class="button-learn-more__text1">Показать все</p>
+                </button>  
         </main>
       </div>
+       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <script src="index.js"></script>
     </body>
   </html>

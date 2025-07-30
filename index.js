@@ -1,6 +1,9 @@
 //свайпер
+
 var init = false;
 var swiper;
+
+
 function swiperCard() {
   const swiperContainer = document.querySelector('.swiper'); 
 
@@ -10,7 +13,7 @@ function swiperCard() {
       swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 1.3,
+        slidesPerView: "auto",
         spaceBetween: 0,
         slideToClickedSlides: true,
         pagination: {
@@ -33,15 +36,31 @@ function swiperCard() {
   }
 }
 
-function swiperCardDestroy() {
 
-  if (window.innerWidth >= 768 ) {
-      const swiperNone= document.querySelector('.fide-copy');
-      swiperNone.classList.remove('swiper');
-      const swiperWapperNone= document.querySelector('.card');
-      swiperWapperNone.classList.remove('swiper-wrapper');
-  }
+function swiperCardDestroy() {
+const swiperNone = document.querySelector('.fide-copy');
+const swiperWapperNone = document.querySelector('.card');
+
+console.log('Ширина окна:', window.innerWidth); // Для отладки
+
+if (window.innerWidth >= 768) {
+if (swiperNone && swiperWapperNone) {
+swiperNone.classList.remove('swiper');
+swiperWapperNone.classList.remove('swiper-wrapper');
 }
+} else {
+if (swiperNone && swiperWapperNone) {
+console.log('Добавляем классы'); // Для отладки
+swiperNone.classList.add('swiper');
+swiperWapperNone.classList.add('swiper-wrapper');
+swiperNone.classList.remove('card--temporary');
+
+}
+}
+}
+
+
+
 
 
 swiperCard();
@@ -49,6 +68,20 @@ window.addEventListener("resize", swiperCard);
 
 swiperCardDestroy();
 window.addEventListener("resize", swiperCardDestroy);
+
+// Бургер меню
+
+const buttonOpen = document.getElementById('buttonOpen');
+const buttonClose = document.getElementById('buttonClose');
+const burgerMenu = document.getElementById('burgerMenu');
+
+buttonOpen.addEventListener('click', () => {
+burgerMenu.classList.remove('burger-menu--hide');
+});
+
+buttonClose.addEventListener('click', () => {
+burgerMenu.classList.add('burger-menu--hide');
+});
 
 // Кнопка показать скрыть
 const button = document.querySelector('.button-learn-more--show');
@@ -61,20 +94,19 @@ let isOpen = false; // Флаг для отслеживания состояни
 
 button.addEventListener('click', () => {
   app.style.transition = "all 0.6s ease-in-out";
+  app.classList.toggle("show-conteiner");
+  button.classList.toggle("button-learn-more--hide");
+  buttonImg.classList.toggle("button-learn-more__img--rotate");
 
   if (!isOpen) {
-    // Если блок закрыт, открываем его
-    app.classList.add("show-conteiner");
-    button.classList.add("button-learn-more--hide");
-    buttonImg.classList.add("button-learn-more__img--rotate");
     buttonText.textContent = "Скрыть";
-  } else {
-    // Если блок открыт, сворачиваем его
-    app.classList.remove("show-conteiner");
-    button.classList.remove("button-learn-more--hide");
-    buttonImg.classList.remove("button-learn-more__img--rotate");
+  } else{
     buttonText.textContent = "Показать все";
   }
 
   isOpen = !isOpen; // Переключаем состояние
 });
+
+
+
+
