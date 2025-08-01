@@ -78,7 +78,7 @@
                    <a class="burger-menu__phone burger-menu--hover"href="8 800 890 8900"> 8 800 890 8900
                    </a>
                  </address>
-                 <ul class="list-lang">
+                 <div class="list-lang">
                     <li>
                      <button class="button-lang burger-menu--hover"> RU
                        <span aria-label="Выбрать русский язык"></span>
@@ -94,7 +94,7 @@
                        <span aria-label="Выбрать китайский язык"></span>
                      </button>
                     </li>
-                 </ul>
+                 </div>
                </footer>
         </aside>
        </div>
@@ -194,9 +194,9 @@
               <div class="title">
                  <h2 class="title__h2">Ремонт техники различных брендов</h2>
               </div>
-              <div class="show-conteiner--hidden">
-                <div id="buttonsMenu" class="buttons-menu fide-copy swiper">
-                      <ul  class=" card swiper-wrapper" id="card">
+             <div class="show-conteiner--hidden">
+                <div id="swiperOne" class="buttons-menu fide-copy swiper">
+                      <ul  class="card swiper-wrapper" id="card">
                         <li class="swiper-slide">
                            <button class="button-card button-card--lenovo">
                              <img class=" button-lap button-lap--go" alt="" />
@@ -260,6 +260,33 @@
                    <p class="button-learn-more__text1">Показать все</p>
                 </button>  
         </main>
+        <aside class="feedback">
+          <header class="feedback__header">
+                 <h2 class="feedback__h2">Обратная связь</h2>
+              </div>
+                <button id="buttonClose" class="button-lap button-lap--close button-lap--hide" onclick="document.getElementById('menuToggle').checked = false;">
+                    <span aria-label="Закрыть меню"></span>
+                </button>
+
+          
+        </aside>
+
+        <footer class="footer footer--position">
+            <div class="footer__left-group">
+                <p class="footer__p"> © 2019 CPS <br> Разработано командой Apesong</br>
+            </div>
+            <br/>
+            <p class="footer__p">
+                Политика конфиденциальности
+            </p>
+            <br/>
+            <div class="footer__right-group">
+                <p class="footer__p">
+                  Информация, размещенная на данной странице, 
+                  не является публичной офертой
+               </p>
+            </div>
+        </footer>
       </div>
        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
        <script src="index.js"></script>

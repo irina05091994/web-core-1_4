@@ -1,19 +1,17 @@
 //свайпер
-
 var init = false;
 var swiper;
-
-
 function swiperCard() {
   const swiperContainer = document.querySelector('.swiper'); 
-
+  
+  
   if (window.innerWidth < 768) {
     if (!init) {
       init = true;
       swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
-        slidesPerView: "auto",
+        slidesPerView: 1.3,
         spaceBetween: 0,
         slideToClickedSlides: true,
         pagination: {
@@ -36,31 +34,22 @@ function swiperCard() {
   }
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+if (window.innerWidth < 768) {
+swiperCard(); // Инициализация свайпера
+}
+});
+
 
 function swiperCardDestroy() {
-const swiperNone = document.querySelector('.fide-copy');
-const swiperWapperNone = document.querySelector('.card');
 
-console.log('Ширина окна:', window.innerWidth); // Для отладки
-
-if (window.innerWidth >= 768) {
-if (swiperNone && swiperWapperNone) {
-swiperNone.classList.remove('swiper');
-swiperWapperNone.classList.remove('swiper-wrapper');
+  if (window.innerWidth >= 768 ) {
+      const swiperNone= document.querySelector('.fide-copy');
+      swiperNone.classList.remove('swiper');
+      const swiperWapperNone= document.querySelector('.card');
+      swiperWapperNone.classList.remove('swiper-wrapper');
+  }
 }
-} else {
-if (swiperNone && swiperWapperNone) {
-console.log('Добавляем классы'); // Для отладки
-swiperNone.classList.add('swiper');
-swiperWapperNone.classList.add('swiper-wrapper');
-swiperNone.classList.remove('card--temporary');
-
-}
-}
-}
-
-
-
 
 
 swiperCard();
@@ -69,14 +58,18 @@ window.addEventListener("resize", swiperCard);
 swiperCardDestroy();
 window.addEventListener("resize", swiperCardDestroy);
 
+console.log('Ширина окна:', window.innerWidth); // Для отладки
+
 // Бургер меню
 
 const buttonOpen = document.getElementById('buttonOpen');
 const buttonClose = document.getElementById('buttonClose');
 const burgerMenu = document.getElementById('burgerMenu');
+const body = document.querySelector('.body-flow');
 
 buttonOpen.addEventListener('click', () => {
 burgerMenu.classList.remove('burger-menu--hide');
+body.classList.toggle("burger-menu--blur");
 });
 
 buttonClose.addEventListener('click', () => {
