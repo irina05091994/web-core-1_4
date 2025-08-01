@@ -5,14 +5,30 @@ function swiperCard() {
   const swiperContainer = document.querySelector('.swiper'); 
   
   
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 784) {
     if (!init) {
       init = true;
       swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 1.3,
-        spaceBetween: 0,
+        breakpoints: {
+              320: {
+                  slidesPerView: 1.3,
+                  spaceBetween: 20
+                  },
+              400: {
+                  slidesPerView: 2,
+                  spaceBetween: 90
+                  },
+              500: {
+                   slidesPerView: 2.5,
+                  spaceBetween: 120
+                  },
+              600: {
+                    slidesPerView: 3,
+                    spaceBetween: 140
+                    },
+          },
         slideToClickedSlides: true,
         pagination: {
           el: '.swiper-pagination',

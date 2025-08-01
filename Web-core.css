@@ -886,9 +886,28 @@ opacity: 0.5;
  	width: 320px;
  	height: 116px;
 	overflow: hidden;
+	
 }
-
-
+@media (min-width: 360px) {
+	.swiper {
+ 	width: 360px;
+	}
+}
+@media (min-width: 400px) {
+	.swiper {
+ 	width: 400px;
+	}
+}
+@media (min-width: 500px) {
+	.swiper {
+ 	width: 500px;
+	}
+}
+@media (min-width: 600px) {
+	.swiper {
+ 	width: 600px;
+	}
+}
 
  .swiper-pagination {
 	position: static;
@@ -899,8 +918,11 @@ opacity: 0.5;
 .swiper-pagination {
 	display: none;}
   }
-  
-
+.swiper-slide
+{
+	width: 70%;
+	height: 100%;
+}
 
   /*кнопка показать все-бренды*/
 .button-learn-more{
