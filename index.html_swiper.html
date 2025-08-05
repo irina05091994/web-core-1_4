@@ -8,26 +8,120 @@
     </head>
     <body class="body">
       <section class="body-flow"> 
-        <div class="title">
-           <h2 class="title__h2">Ремонт техники различных брендов</h2>
-        </div>
-              <div class="swiper-container swiper" data-mobile="true">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><a href="" class="button-card"></a></div>
-        <div class="swiper-slide"><a href="" class="button-card"></a></div>
-        <div class="swiper-slide"><a href="" class="button-card"></a></div>
-        <div class="swiper-slide"><a href="" class="button-card"></a></div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-                     
+          <div class="swiper-wrapper image-slider__wrapper">
+            
+            <div class="swiper-slide menu__item">
+                <img class="menu__img" src="img/lenovo.svg" alt="logo">
+                <a  href="https://www.google.com" class="menu__button">
+                    <img class=" button-lap button-lap--go" alt="" />
+                </a>
+            </div>
+            <div class="swiper-slide menu__item">
+                <img class="menu__img" src="img/lenovo.svg" alt="logo">
+                <a  href="https://www.google.com" class="menu__button">
+                    <img class=" button-lap button-lap--go" alt="" />
+                </a>
+            </div>
+            <div class="swiper-slide menu__item">
+                <img class="menu__img" src="img/lenovo.svg" alt="logo">
+                <a  href="https://www.google.com" class="menu__button">
+                    <img class=" button-lap button-lap--go" alt="" />
+                </a>
+            </div>
+            <div class="swiper-slide menu__item">
+                <img class="menu__img" src="img/lenovo.svg" alt="logo">
+                <a  href="https://www.google.com" class="menu__button">
+                    <img class=" button-lap button-lap--go" alt="" />
+                </a>
+            </div>
+            <div class="swiper-slide menu__item">
+                <img class="menu__img" src="img/lenovo.svg" alt="logo">
+                <a  href="https://www.google.com" class="menu__button">
+                    <img class=" button-lap button-lap--go" alt="" />
+                </a>
+            </div>
+            <div class="swiper-slide menu__item">
+                <img class="menu__img" src="img/lenovo.svg" alt="logo">
+                <a  href="https://www.google.com" class="menu__button">
+                    <img class=" button-lap button-lap--go" alt="" />
+                </a>
+            </div>
+    <!-- Пагинация -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Подключаем Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+      
                 <button id="showButton" class="button-learn-more button-learn-more--show"> 
                    <img class="button-learn-more__img" src="img/expand.svg" alt="Развернуть/свернуть контент"> 
                    <p class="button-learn-more__text1">Показать все</p>
                 </button>  
 
-                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
                 <script src="index.js"></script>
       </section>
+
+
+
+
+      <div class="service-table-wrapper">
+  <!-- Заголовок таблицы -->
+  <div class="service-table-header">
+    <div class="service-table-cell">Услуга</div>
+    <div class="service-table-cell">Цена</div>
+    <div class="service-table-cell">Срок</div>
+    <div class="service-table-cell"></div>
+  </div>
+
+  <!-- Swiper -->
+  <div class="sw ">
+    <div class="s ">
+      <!-- Карточка 1 -->
+      <div class="swiper-slide">
+        <dl class="service-cards__card">
+          <div class="service-cards__dt-dd-wrapper">
+            <dt class="service-cards__dt-text">Ремонтные услуги</dt>
+            <dd class="service-cards__dd-text">Тестирование с выдачей технического заключения</dd>
+          </div>
+          <div class="service-cards__dt-dd-wrapper">
+            <dt class="service-cards__dt-text">Цена</dt>
+            <dd class="service-cards__dd-text">1000 ₽</dd>
+          </div>
+          <div class="service-cards__dt-dd-wrapper">
+            <dt class="service-cards__dt-text">Срок</dt>
+            <dd class="service-cards__dd-text">30–120 мин</dd>
+          </div>
+          <div class="service-cards__btn-wrapper">
+            <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Карточка 2 -->
+      <div class="swiper-slide">
+        <dl class="service-cards__card">
+          <div class="service-cards__dt-dd-wrapper">
+            <dt class="service-cards__dt-text">Услуга</dt>
+            <dd class="service-cards__dd-text">Замена термопасты</dd>
+          </div>
+          <div class="service-cards__dt-dd-wrapper">
+            <dt class="service-cards__dt-text">Цена</dt>
+            <dd class="service-cards__dd-text">500 ₽</dd>
+          </div>
+          <div class="service-cards__dt-dd-wrapper">
+            <dt class="service-cards__dt-text">Срок</dt>
+            <dd class="service-cards__dd-text">20 мин</dd>
+          </div>
+          <div class="service-cards__btn-wrapper">
+            <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+          </div>
+        </dl>
+      </div>
+
+      <!-- Ещё карточки... -->
+    </div>
+  </div>
+</div>
   </body>
 </html>

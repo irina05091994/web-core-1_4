@@ -121,10 +121,10 @@
                </button>
                <img class="divider" src="img/divider.svg" alt=" ">
              </section>
-              <button class="button-lap button-lap--repair">
+              <button id="buttonOpenFeedMob" class="button-lap button-lap--repair">
                 <span aria-label="Оставить заявку"></span>
               </button>
-              <button class=" button-lap button-lap--checkstatus">
+              <button id="buttonOpenCallMob" class=" button-lap button-lap--checkstatus">
                 <span aria-label="Статус ремонта"></span>
              </button>
            </div>
@@ -132,11 +132,11 @@
         <header class="header-two">
           <h1 class="Title-copy Title-copy__h1">Услуги и сервисы</h1>
           <nav class="header__nav">
-            <button class="header-two__button-caption button-caption--active">
+            <button id="buttonOpenFeed" class="header-two__button-caption button-caption--active">
               Оставить заявку
               <img src="img/repair.svg" class="button-caption button-caption--repair" alt="">
             </button>
-            <button class="header-two__button-caption button-caption--active">
+            <button id="buttonOpenCall" class="header-two__button-caption button-caption--active">
               Статус ремонта
               <img src="img/checkstatus.svg" class="button-caption button-caption--checkstatus" alt="">
             </button>
@@ -190,12 +190,12 @@
             </div>
             <img class="one-block__img-cps" src="img\photologo.jpg" alt="Фотография логотипа компании cps">
           </article>
-          <section class="section-card"> 
+           <section class="section-card"> 
               <div class="title">
                  <h2 class="title__h2">Ремонт техники различных брендов</h2>
               </div>
              <div class="show-conteiner--hidden">
-                <div id="swiperOne" class="buttons-menu fide-copy swiper">
+                <div  class="buttons-menu fide-copy swiper">
                       <ul  class="card swiper-wrapper" id="card">
                         <li class="swiper-slide">
                            <button class="button-card button-card--lenovo">
@@ -253,24 +253,309 @@
                           </button>
                         </li>
                     </ul>
-                    <div class="swiper-pagination"></div>
-                </div>
+                 </div>
+              <div class="swiper-pagination"></div>
+            </section>
                 <button id="showButton" class="button-learn-more button-learn-more--show"> 
                    <img class="button-learn-more__img" src="img/expand.svg" alt="Развернуть/свернуть контент"> 
                    <p class="button-learn-more__text1">Показать все</p>
-                </button>  
+                </button>
+              <section class="section-repair"> 
+                    <div class="title">
+                       <h2 class="title__h2">Ремонт техники различных брендов</h2>
+                    </div>
+                    <div class="section-repair__show-conteiner--hidden">
+                        <div id="swiperTwo" class="buttons-menu swiper fide-copy swiper-two">
+                            <ul  class="repair  swiper-wrapper" id="card">
+                               <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт ноутбуков">
+                                      <p class="button-repair__p">Ремонт ноутбуков</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>
+                                  <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт ПК">
+                                      <p class="button-repair__p">Ремонт ПК</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>
+                                  <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт планшетов">
+                                      <p class="button-repair__p">Ремонт планшетов</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>
+                                  <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт мониторов">
+                                      <p class="button-repair__p">Ремонт мониторов</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>
+                                  <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт ноутбуков">
+                                      <p class="button-repair__p">Ремонт ноутбуков</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>
+                                  <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт телефонов">
+                                      <p class="button-repair__p">Ремонт телефонов</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>
+                                  <li class="swiper-slide">
+                                 <div class="button-repair" aria-label="Ремонт ПК">
+                                      <p class="button-repair__p">Ремонт ПК</p>
+                                      <a class="link__go link__go--position">
+                                          <img class="button-lap button-lap--go button-repair--position" alt="" />
+                                      </a>
+                                   </div>
+                                  </li>            
+                              </ul>
+ 
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    <button id="showButtonTwo" class="button-learn-more button-learn-more--show"> 
+                   <img class="button-learn-more__img-repair" src="img/expand.svg" alt="Развернуть/свернуть контент"> 
+                   <p class="button-learn-more__text-repair">Показать все</p>
+                  </section>
+
+                   <section class="repair-service-prices section-card"> 
+                    <div class="title">
+                       <h2 class="title__h2">Цены на услуги</h2>
+                    </div>
+                    <div class="main__table-wrapper">
+                       <div class="responsive-table-wrapper">
+                            <table class="responsive-table">
+                              <th class="responsive-table_h">Ремонтные услуги</th>
+                        <th class="responsive-table_h">Цена</th>
+                        <th class="responsive-table_h">Срок</th>
+                                             
+                         <tr class="responsive-table__row">
+                           <td>
+                              <span class="mobile-label">Ремонтные услуги</span>
+                              <br>
+                              <span class="data-text">Диагностика</span>
+                           </td>
+                           <td>
+                              <span class="mobile-label">Цена</span>
+                              <br>
+                              <span class="data-text">Бесплатно</span>
+                           </td>
+                           <td>
+                               <span class="mobile-label">Срок</span>
+                               <br>
+                               <span class="data-text">30 мин</span>
+                            </td>
+                            <td>
+                               <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+                            </td>
+                           </tr>
+                          <tr class="responsive-table__row">
+                           <td>
+                              <span class="mobile-label">Ремонтные услуги</span>
+                              <br>
+                              <span class="data-text">Замена дисплея</span>
+                           </td>
+                           <td>
+                              <span class="mobile-label">Цена</span>
+                              <br>
+                              <span class="data-text">1 000 ₽</span>
+                           </td>
+                           <td>
+                               <span class="mobile-label">Срок</span>
+                               <br>
+                               <span class="data-text">30 мин</span>
+                            </td>
+                            <td>
+                               <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+                            </td>
+                           </tr>
+                             <tr class="responsive-table__row">
+                           <td>
+                              <span class="mobile-label">Ремонтные услуги</span>
+                              <br>
+                              <span class="data-text">Замена полифонического динамика</span>
+                           </td>
+                           <td>
+                              <span class="mobile-label">Цена</span>
+                              <br>
+                              <span class="data-text">1 000 ₽</span>
+                           </td>
+                           <td>
+                               <span class="mobile-label">Срок</span>
+                               <br>
+                               <span class="data-text">30-120 мин</span>
+                            </td>
+                            <td>
+                               <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+                            </td>
+                           </tr>
+                          <tr class="responsive-table__row">
+                           <td>
+                              <span class="mobile-label">Ремонтные услуги</span>
+                              <br>
+                              <span class="data-text">Тестирование с выдачей технического заключения</span>
+                           </td>
+                           <td>
+                              <span class="mobile-label">Цена</span>
+                              <br>
+                              <span class="data-text">1 000 ₽</span>
+                           </td>
+                           <td>
+                               <span class="mobile-label">Срок</span>
+                               <br>
+                               <span class="data-text">30-120 мин</span>
+                            </td>
+                            <td>
+                               <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+                            </td>
+                           </tr>
+                           </tr>
+                             <tr class="responsive-table__row">
+                           <td>
+                              <span class="mobile-label">Ремонтные услуги</span>
+                              <br>
+                              <span class="data-text">Замена программного обеспечения</span>
+                           </td>
+                           <td>
+                              <span class="mobile-label">Цена</span>
+                              <br>
+                              <span class="data-text">1 000 ₽</span>
+                           </td>
+                           <td>
+                               <span class="mobile-label">Срок</span>
+                               <br>
+                               <span class="data-text">30-120 мин</span>
+                            </td>
+                            <td>
+                               <button class="btn-oval btn-oval--order" aria-label="Заказать"></button>
+                            </td>
+                           </tr>
+                        </table>
+                      </div>
+                        </table>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      
+                      <div class="echo-phras">
+                          <p class="echo-phras__text">
+                              Все цены указаны с учетом НДС. 
+                              Стоимость ремонта указана на единичную услугу. 
+                              Для получения коммерческого предложения на постоянное обслуживание, оставьте заявку.
+                          </p>
+                          <a class="echo-phras__link" href="#">
+                              Получить коммерческое предложение  
+                              <img class="echo-phras__link--img" src="img/Line.svg" >
+                          </a>
+                      </div>
+               </section>
         </main>
-        <aside class="feedback">
-          <header class="feedback__header">
-                 <h2 class="feedback__h2">Обратная связь</h2>
-              </div>
-                <button id="buttonClose" class="button-lap button-lap--close feedback__button-lap--close">
+        <aside class="feedback feedback--hide feedback-con" aria-labelledby="feedback-heading">
+           <button id="buttonCloseFeed" class="button-lap button-lap--close feedback__button-lap--close">
                     <span aria-label="Закрыть меню"></span>
                 </button>
+          <div class="feedback__list">
+               <h2 id="feedback-heading" class="feedback__h2">Обратная связь</h2>
+            <form class="feedback__form" action="#" method="POST">
+               
+                 <label for="feedback-name" class="feedback__label visually-hidden"></label>
+                     <input
+                         id="feedback-name"
+                          class="feedback__input"
+                          type="text"
+                          name="name"
+                          placeholder="Имя"
+                          minlength="2"
+                          maxlength="30"
+                          required
+                        />
+                    <input
+                         id="feedback-tel"
+                         class="feedback__input"
+                         type="tel"
+                          name="tel"
+                          placeholder="Телефон"
+                          maxlength="13"
+                          pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+                          inputmode="numeric"
+                          />
+                  <input
+                       id="feedback-email"
+                       class="feedback__input"
+                       type="email"
+                       name="email"
+                       placeholder="Электронная почта"
+                       maxlength="50"
+                       required
+                      />
+                 <textarea
+                    id="feedback-message"
+                    class="feedback__input feedback__input--textarea"
+                    name="message"
+                    rows="4"
+                    placeholder="Сообщение"
+                    maxlength="500"
+                 ></textarea>
 
-          
-        </aside>
+                <p class="feedback__text">
+                     Нажимая «Отправить», вы даёте согласие на
+                     <a href="#" class="feedback__link feedback__link--pink">обработку персональных данных</a>
+                     
+                     и соглашаетесь с нашей
+                     <a href="#" class="feedback__link feedback__link--pink">политикой конфиденциальности</a>.
+                 </p>
 
+                <div class="feedback__button-send">
+                <button class="button-send" type="submit">
+                </button>
+                </div>
+             </form>
+             </div>
+          </aside>
+          <aside class="feedback feedback-call feedback--hide" aria-labelledby="feedback-heading">
+                  <button id="buttonCloseCall" class="button-lap button-lap--close feedback__button-lap--close">
+                    <span aria-label="Закрыть меню"></span>
+                </button>
+                <div class="feedback__list">
+                    <h2 id="feedback-heading" class="feedback__h2">Заказать звонок</h2>
+                        <form class="feedback__form" action="#" method="POST">
+                            <input
+                                  id="feedback-tel"
+                                  class="feedback__input"
+                                   type="tel"
+                                   name="tel"
+                                   placeholder="Телефон"
+                                    maxlength="13"
+                                    pattern="^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+                                    inputmode="numeric"
+                                   />
+                              <p class="feedback__text">
+                                    Нажимая «Отправить», вы даёте согласие на
+                                    <a href="#" class="feedback__link feedback__link--pink">обработку персональных данных</a>
+                                     и соглашаетесь с нашей
+                                    <a href="#" class="feedback__link feedback__link--pink">политикой конфиденциальности</a>.
+                              </p>
+                            <div class="feedback__button-send">
+                               <button class="button-send" type="submit">
+                              </button>
+                            </div>
+                         </form>
+                    </div>
+              </aside>
         <footer class="footer footer--position">
             <div class="footer__left-group">
                 <p class="footer__p"> © 2019 CPS <br> Разработано командой Apesong</br>
@@ -288,7 +573,8 @@
             </div>
         </footer>
       </div>
-       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <div class="feedback--blur--hide">
+         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
        <script src="index.js"></script>
     </body>
   </html>
