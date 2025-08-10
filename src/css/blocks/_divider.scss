@@ -1,0 +1,9 @@
+.divider--order{
+	order:0;
+
+   @media (min-width: 768px) {
+		order:-2;
+		padding-right:0;
+	} 
+}
+

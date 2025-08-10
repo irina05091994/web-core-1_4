@@ -1,0 +1,34 @@
+@use "../base/variables" as *;
+
+.section-repair{
+	margin-top:50px;
+
+
+
+	&__show-conteiner--hidden{
+             @media (min-width: 768px) {
+		        min-width: auto;
+    	        height: 170px;
+		        overflow-y: hidden;
+		        transition: all 5s;
+	        }
+            @media (min-width: 1120px) {
+	    	    height: 170px;
+	        }
+
+    }
+
+    &__show-conteiner {
+		height: auto;
+		max-height: 600px;
+		overflow: auto;
+    }
+}
+
+.repair{
+	padding-left:0;
+	
+     @media (min-width: 768px) {
+		padding-left:0;
+	}
+}

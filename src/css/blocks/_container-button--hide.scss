@@ -1,0 +1,10 @@
+.container-button--hide {
+	display: none;
+    
+        @media (min-width: 768px) {
+		    display: flex;
+		    gap:16px;
+		    margin-left: auto;
+	}
+}
+

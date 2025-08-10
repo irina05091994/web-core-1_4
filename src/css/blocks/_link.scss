@@ -1,0 +1,11 @@
+
+.link__go{
+	list-style: none;
+
+    &--position{
+	    display: flex;  
+	    justify-content: flex-end;
+	    align-items: flex-end;
+	    width: 100%;
+    }
+}

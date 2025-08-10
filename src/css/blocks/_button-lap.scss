@@ -1,0 +1,72 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as *;
+
+.button-lap{
+	background-color: white;
+	border: none;
+	width: 40px;
+	height: 40px;
+	padding: 0;
+	box-shadow: none;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+
+	&:hover{
+		opacity: 0.5; 
+	}
+       &--close{
+	        background-image: url(/public/img/close.svg);
+        }
+
+
+    &--search{
+	        background-image: url(/public/img/search.svg);
+        }
+
+    &--search--position{
+	    margin-left: auto;
+    }
+
+    &--burger-menu{
+	    background-image: url(/public/img/burger.svg);
+	    order:0;
+	    flex-shrink: 0;
+    @media (min-width: 768px) {
+		order:-3;
+	}
+    }
+
+    &--call{
+	    background-image: url(/public/img/call.svg);
+	    margin:0;
+	    order:0;
+    }
+    &--chat{
+	    background-image: url(/public/img/chat.svg);
+	    flex-shrink: 0;
+	    order:0;
+    }
+    &--profile{
+	    background-image: url(/public/img/profile.svg);
+	    order:0;
+    }
+    &--repair{
+	    background-image: url(/public/img/repair.svg);
+	    flex-shrink: 0;
+	    order:0;
+    }
+    &--checkstatus {
+	    background-image: url(/public/img/checkstatus.svg);
+	    flex-shrink: 0;
+	    order: 0;
+	    margin-right: 16px;
+    }
+    &--go{
+	    background-image: url(/public/img/go.svg);
+    }
+}
+@media (min-width: 1440px) {
+  .button-lap--hide {
+    display: none;
+  }
+}

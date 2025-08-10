@@ -1,0 +1,13 @@
+.list-lang{
+	list-style: none;
+	display: flex;
+    gap: 7px;
+	flex-direction: row;
+	margin-left: 24px;
+	padding:0;
+
+
+    &__li{
+	  list-style: none;
+    }
+}

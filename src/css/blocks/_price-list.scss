@@ -1,0 +1,55 @@
+@use "../base/variables" as *;
+
+.price-list{
+	max-width: 90vw;
+	padding-left:20px;
+	padding-bottom: 16px;
+	list-style: none;
+
+   
+
+	&__button-oval{
+     	position: absolute;
+    	 bottom:16px;
+     	right: 16px;
+	}
+	&__data-text {
+     	color: $black;
+	 	font-weight: 400;
+	 	font-size: 14px;
+  	 	font-family: $font-main;
+  	 	line-height: 18px;
+ 	 	letter-spacing: 0.2px;
+		}
+
+	&__mobile-label {
+    	 display: inline;
+    	 color: $gray-text;
+	 	font-weight: 400;
+  	 	font-family: $font-main;
+	 	font-size: 14px;
+  	 	line-height: 18px;
+ 	 	letter-spacing: 0.2px;
+  	}
+
+	&__link{
+   		display: flex;
+    	flex-direction: column;
+		gap: 16px;
+    	width: 260px;
+    	height: 200px;
+		box-sizing: border-box;
+   	 	border-radius: 12px;
+    	overflow: hidden;
+    	background-color: $white;
+    	padding: 16px;
+		text-decoration: none;
+		position: relative; 
+	}
+	
+	@media (min-width: 768px) {
+		padding:0;
+		display: none;
+	}
+
+}

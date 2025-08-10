@@ -1,0 +1,7 @@
+@use "../base/variables" as *;
+
+.body-flow{
+	display: grid;
+	max-width: 1120px;
+	align-items: start;
+}

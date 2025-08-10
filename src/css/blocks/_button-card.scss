@@ -1,0 +1,67 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as *;
+
+
+/*кнопки с брендами*/
+.button-card{
+	width: 240px;
+	height: 72px;
+	background-repeat: no-repeat;
+	background-color: $white;
+	border: 1px solid $gray;
+	padding-right: 16px;
+	background-position: 16px;
+	border-radius: 6px;
+	display: flex;
+	gap: 16px;
+  	align-items: center;
+  	justify-content: end;
+	box-sizing: border-box;
+	flex-shrink: 1;
+	margin:0;
+
+
+    &:hover{
+	   @include button-card-animation;
+    }
+
+    &--lenovo{
+	    background-image: url(/public/img/lenovo.svg);
+    }
+
+    &--samsung{
+	    background-image: url(/public/img/samsung.svg);
+    }
+
+    &--apple{
+	    background-image: url(/public/img/apple.svg);
+    }
+
+    &--viewsonic{
+	    background-image: url(/public/img/viewsonic.svg);
+    }
+
+    &--bosch{
+	    background-image: url(/public/img/bosch.svg);
+    } 
+
+    &--hp{
+	    background-image: url(/public/img/hp.svg);
+    }
+
+    &--acer{
+	    background-image: url(/public/img//acer.svg);
+    }
+
+    &--sony{
+	    background-image: url(/public/img/sony.svg);
+    }
+
+    @media (min-width: 768px) {
+		width: 224px;
+	}
+
+    @media (min-width: 1120px) {
+    	width: 240px;
+	}
+}

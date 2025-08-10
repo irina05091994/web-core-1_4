@@ -1,0 +1,40 @@
+@use "../base/variables" as *;
+
+.header-page {
+	display: flex;
+	align-items: center;
+	gap:16px;
+	background-color: white;
+	height: 88px;
+	box-shadow: 0 1px 0 $color-sky; /* тень*/
+	z-index: $z-index-effect;
+	width: auto;
+
+
+    &--hide {
+        @media (min-width: 1440px){
+		    display: none;
+	    }
+    }
+
+
+    &__left-group {
+	    display:flex;
+	    align-items: center;
+	    gap:16px;
+        margin-left: 16px;
+
+        @media (min-width: 768px) {
+		    margin-left: 24px;
+	    }
+    }
+
+
+    &__right-group{
+	    display: flex;
+	    margin-left: auto;
+	    justify-content: flex-end;
+	    flex-grow: 1;
+	    gap:16px;
+    }
+}

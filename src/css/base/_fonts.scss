@@ -1,0 +1,32 @@
+
+@use "variables" as *;
+
+@font-face {
+  font-family: $font-medium;
+  src: url("/public/fonts/TTLakes-Medium.eot");
+  src: url("/public/fonts/TTLakes-Medium.eot?#iefix") format('embedded-opentype'),
+       url("/public/fonts/TTLakes-Medium.woff") format("woff"),
+       url("/public/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-main;
+  src: url("public/fonts/TTLakes-Regular.eot");
+  src: url("/public/fonts/TTLakes-Regular.eot?#iefix") format('embedded-opentype'),
+       url("/public/fonts/TTLakes-Regular.woff") format("woff"),
+       url("/public/fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $font-bold;
+  src: url("/public/fonts/TTLakes-Bold.eot");
+  src: url("/public/fonts/TTLakes-Bold.eot?#iefix") format('embedded-opentype'),
+       url("/public/fonts/TTLakes-Bold.woff") format("woff"),
+       url("/public/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

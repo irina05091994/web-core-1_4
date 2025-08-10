@@ -1,0 +1,28 @@
+@use "../base/variables" as *;
+
+
+.Title-copy {
+	border-left: 4px solid $accent;
+	padding-left: 12px;
+
+    &__h1{
+	    font-family: $font-bold;
+	    font-size: 28px;
+	    line-height: 40px;
+	    letter-spacing:-0.6px;
+	    font-weight: 700;
+	    color: $black;
+	    margin:0;
+	    margin-right: auto;
+    }
+
+
+
+    @media (min-width: 768px) { 
+		padding-left: 20px;
+	}
+
+    @media (min-width: 1120px) {
+		padding-left: 30px;
+	}
+}
