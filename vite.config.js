@@ -1,21 +1,32 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  root: '.', // означает — текущая папка (где vite.config.js)
-  publicDir: '../public', // папка с статикой (favicon, img)
+  // Убираем root: 'src' — оставляем корнем проект
+  // root: 'src',  // ❌ удали эту строку
+
+  // Папка с favicon, изображениями и т.д.
+  publicDir: 'public',
+
+  // Базовый путь — важен для GitHub Pages
+  base: '/web-core-1_4/',
+
   build: {
-    outDir: '../dist',   // куда собирать
-    emptyOutDir: true,   // очищать dist перед сборкой
-    assetsDir: 'assets', // подпапка для ассетов: dist/assets/
+    // Куда собирать
+    outDir: 'dist',
+    // Очищать dist перед сборкой
+    emptyOutDir: true,
+    // Подпапка для ассетов
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
-        main: 'index.html',
-        // добавь другие HTML-страницы, если нужно
+        main: 'index.html', // index.html в корне
+        // можно добавить другие HTML-страницы
       },
     },
   },
+
   server: {
     port: 3000,
-    open: true,          // открыть браузер при запуске
+    open: true,
   },
 });
