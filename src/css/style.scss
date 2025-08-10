@@ -2,51 +2,51 @@
 /* База */
 
 @use "base/_variables" as *;
-@use "base/_mixin";
-@use "base/_fonts";
-@use "base/_normalize" ;
+@use "./base/_mixin";
+@use "./base/fonts";
+@use "./base/_normalize" ;
 
 /* Блоки */
 
-@use "blocks/_body";
-@use "blocks/_body-flow" ;
-@use "blocks/_button-lap";
-@use "blocks/_footer";
-@use "blocks/_burger-menu";
-@use "blocks/_button-lang";
-@use "blocks/_list-lang" ;
-@use "blocks/_conteiner-button-lap";
-@use "blocks/_header-page";
-@use "blocks/_logo-company";
-@use "blocks/_container-button--hide" ;
-@use "blocks/_divider"; 
-@use "blocks/_header-two"; 
-@use "blocks/_Title-copy"; 
-@use "blocks/_button-caption"; 
-@use "blocks/_navigation";
-@use "blocks/_one-block";
-@use "blocks/_button-next";
-@use "blocks/_title";
-@use "blocks/_button-card";
-@use "blocks/_card";
-@use "blocks/_swiper";
-@use "blocks/_button-learn-more";
-@use "blocks/_show-conteiner";
-@use "blocks/_feedback";
-@use "blocks/_button-send";
-@use "blocks/_echo-phras";
-@use "blocks/_button-repair";
-@use "blocks/_fide-copy";
-@use "blocks/_contener-navigation";
-@use "blocks/_button-oval";
-@use "blocks/_price-list";
-@use "blocks/_rotate";
-@use "blocks/_header__nav";
-@use "blocks/_section-repair";
-@use "blocks/_responsive-table";
-@use "blocks/_link";
-@use "blocks/_section-card";
-@use "blocks/_buttons-menu";
+@use "./blocks/_body";
+@use "./blocks/_body-flow" ;
+@use "./blocks/_button-lap";
+@use "./blocks/_footer";
+@use "./blocks/_burger-menu";
+@use "./blocks/_button-lang";
+@use "./blocks/_list-lang" ;
+@use "./blocks/_conteiner-button-lap";
+@use "./blocks/_header-page";
+@use "./blocks/_logo-company";
+@use "./blocks/_container-button--hide" ;
+@use "./blocks/_divider"; 
+@use "./blocks/_header-two"; 
+@use "./blocks/_Title-copy"; 
+@use "./blocks/_button-caption"; 
+@use "./blocks/_navigation";
+@use "./blocks/_one-block";
+@use "./blocks/_button-next";
+@use "./blocks/_title";
+@use "./blocks/_button-card";
+@use "./blocks/_card";
+@use "./blocks/_swiper";
+@use "./blocks/_button-learn-more";
+@use "./blocks/_show-conteiner";
+@use "./blocks/_feedback";
+@use "./blocks/_button-send";
+@use "./blocks/_echo-phras";
+@use "./blocks/_button-repair";
+@use "./blocks/_fide-copy";
+@use "./blocks/_contener-navigation";
+@use "./blocks/_button-oval";
+@use "./blocks/_price-list";
+@use "./blocks/_rotate";
+@use "./blocks/_header__nav";
+@use "./blocks/_section-repair";
+@use "./blocks/_responsive-table";
+@use "./blocks/_link";
+@use "./blocks/_section-card";
+@use "./blocks/_buttons-menu";
 
 
 
