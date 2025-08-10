@@ -2,51 +2,51 @@
 /* База */
 
 @use "base/_variables" as *;
-@use "base/_mixin" as *;
-@use "base/_fonts" as *;
-@use "base/_normalize" as *;
+@use "base/_mixin";
+@use "base/_fonts";
+@use "base/_normalize" ;
 
 /* Блоки */
 
-@use "blocks/_body" as *;
-@use "blocks/_body-flow" as *;
-@use "blocks/_button-lap" as *;
-@use "blocks/_footer" as *;
-@use "blocks/_burger-menu" as *;
-@use "blocks/_button-lang" as *;
-@use "blocks/_list-lang" as *;
-@use "blocks/_conteiner-button-lap" as *;
-@use "blocks/_header-page" as *;
-@use "blocks/_logo-company" as *;
-@use "blocks/_container-button--hide" as *;
-@use "blocks/_divider" as *; 
-@use "blocks/_header-two" as *; 
-@use "blocks/_Title-copy" as *; 
-@use "blocks/_button-caption" as *; 
-@use "blocks/_navigation" as *;
-@use "blocks/_one-block" as *;
-@use "blocks/_button-next" as *;
-@use "blocks/_title" as *;
-@use "blocks/_button-card" as *;
-@use "blocks/_card" as *;
-@use "blocks/_swiper" as *;
-@use "blocks/_button-learn-more" as *;
-@use "blocks/_show-conteiner" as *;
-@use "blocks/_feedback" as *;
-@use "blocks/_button-send" as *;
-@use "blocks/_echo-phras" as *;
-@use "blocks/_button-repair" as *;
-@use "blocks/_fide-copy" as *;
-@use "blocks/_contener-navigation" as *;
-@use "blocks/_button-oval" as *;
-@use "blocks/_price-list" as *;
-@use "blocks/_rotate" as *;
-@use "blocks/_header__nav" as *;
-@use "blocks/_section-repair" as *;
-@use "blocks/_responsive-table" as *;
-@use "blocks/_link" as *;
-@use "blocks/_section-card" as *;
-@use "blocks/_buttons-menu" as *;
+@use "blocks/_body";
+@use "blocks/_body-flow" ;
+@use "blocks/_button-lap";
+@use "blocks/_footer";
+@use "blocks/_burger-menu";
+@use "blocks/_button-lang";
+@use "blocks/_list-lang" ;
+@use "blocks/_conteiner-button-lap";
+@use "blocks/_header-page";
+@use "blocks/_logo-company";
+@use "blocks/_container-button--hide" ;
+@use "blocks/_divider"; 
+@use "blocks/_header-two"; 
+@use "blocks/_Title-copy"; 
+@use "blocks/_button-caption"; 
+@use "blocks/_navigation";
+@use "blocks/_one-block";
+@use "blocks/_button-next";
+@use "blocks/_title";
+@use "blocks/_button-card";
+@use "blocks/_card";
+@use "blocks/_swiper";
+@use "blocks/_button-learn-more";
+@use "blocks/_show-conteiner";
+@use "blocks/_feedback";
+@use "blocks/_button-send";
+@use "blocks/_echo-phras";
+@use "blocks/_button-repair";
+@use "blocks/_fide-copy";
+@use "blocks/_contener-navigation";
+@use "blocks/_button-oval";
+@use "blocks/_price-list";
+@use "blocks/_rotate";
+@use "blocks/_header__nav";
+@use "blocks/_section-repair";
+@use "blocks/_responsive-table";
+@use "blocks/_link";
+@use "blocks/_section-card";
+@use "blocks/_buttons-menu";
 
 
 
