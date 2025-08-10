@@ -1,4 +1,4 @@
-import '../css/style.scss';
+import './css/style.scss';
 
 
 var init = false;
