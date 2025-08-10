@@ -1,4 +1,6 @@
 import '../css/style.scss';
+
+
 var init = false;
 var swiper;
 function swiperCard() {
