@@ -1,0 +1,19 @@
+.button-oval{
+	 width: 119px;
+   	 height: 32px;
+     text-decoration: none;
+     background-color: inherit;
+     border: 1px solid transparent;
+     border-radius: 16px;
+     cursor: pointer;
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center;	
+
+     &--order{
+	     background-image: url(/public/img/order.svg);
+     }
+     &:hover{
+        opacity: 0.5;   
+     }
+}

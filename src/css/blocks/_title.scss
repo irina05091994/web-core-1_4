@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+ 
+.title{
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	height: 80px;
+	margin-bottom: 16px;
+	padding-left: 16px;
+	background: linear-gradient(to right, $gray-light, $white);
+
+
+
+    &__h2{
+	    font-size: 16px;
+	    font-family: $font-main;
+	    font-weight: 400;
+	    color: $gray-text;
+	    line-height: 24px;
+	    letter-spacing:-0.2px;
+	    text-transform: uppercase;
+	    margin: 16px;
+	    padding: 16px 0;
+    }
+
+    @media (min-width: 768px) {
+        height: 56px;
+		margin-bottom: 24px;
+	}
+	
+    @media (min-width: 1120px) {
+		padding-left: 32px;
+	}
+}

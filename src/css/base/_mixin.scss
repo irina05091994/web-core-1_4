@@ -1,0 +1,16 @@
+@use "variables" as *;
+
+@mixin contrast-text-animation  {
+    color: $gray-text;
+    transition: transform 0.3s ease;
+}
+
+@mixin navigation-animation  {
+    border: 2px solid turquoise;
+	  border-radius: 6px;
+	  background: $white;
+}
+
+@mixin button-card-animation  {
+border: 2px solid $pink;
+}

@@ -1,0 +1,35 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as *;
+
+.button-repair{
+	width: 240px;
+	height: 160px;
+	border-radius: 6px;
+	background-color: $white;
+	border: 1px solid $gray;
+	box-sizing: border-box;
+	padding:16px;
+	display: flex;
+  	flex-direction: column;
+  	justify-content: space-between;
+
+    &:hover{
+	    @include button-card-animation;
+    }
+
+    &__p{
+	    font-family: $font-medium;
+	    font-weight: 500;
+	    font-size: 16px;
+	    line-height: 24px;
+	    letter-spacing: 0.2px;
+	    margin: 0;
+	    display: flex;
+    }
+	@media (min-width: 768px) {
+		width: 224px;
+  	}
+	@media (min-width: 1120px) {
+		width: 240px;
+  	}
+}

@@ -1,0 +1,50 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as *;
+
+.button-learn-more{
+	background: none;
+	border: none;
+	margin:0;
+	padding:0;
+	width: 132px;
+	height: 24px;
+	font-family: $font-medium;
+	white-space: nowrap;
+	font-weight: 500;
+	font-size: 16px;
+	color: $black;
+	margin-left: 24px;
+
+
+
+    &:hover{
+	    @include contrast-text-animation;
+    }
+
+    &--show{
+	    display: none;
+    }
+
+    &--show,
+	&--hide{
+        @media (min-width: 768px){
+	
+		    display: flex;
+		    align-items:center;
+		    gap: 8px;
+		    z-index: $z-index-normal;
+		    margin-left: 24px;
+		    margin-top: 24px;
+	    }
+	
+        @media (min-width: 1120px){
+			margin-left: 32px;
+		    margin-top: 24px;
+        }
+    }   
+    
+
+    &__img--rotate{
+        transform: rotateX(180deg);
+    }
+}

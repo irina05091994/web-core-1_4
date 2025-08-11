@@ -1,0 +1,15 @@
+@use "../base/variables" as *;
+
+.button-lang{
+	background-color: white;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+	font-family: $font-medium;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing:-0.2px;
+	font-weight: 500;
+	color:$black;
+	max-width: 25px;
+}

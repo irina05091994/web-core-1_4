@@ -1,0 +1,35 @@
+{
+  "name": "my-html-project",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "vite build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.5.6",
+    "sass": "^1.90.0",
+    "vite": "^7.1.1"
+  },
+  "description": "Репозиторий проекта на GitHub: https://github.com/irina05091994/web-core-1_4",
+  "main": "vite.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irina05091994/web-core-1_4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/irina05091994/web-core-1_4/issues"
+  },
+  "browserslist": [
+    "last 1 Chrome version",
+    "last 1 Firefox version"
+  ],
+  "homepage": "https://github.com/irina05091994/web-core-1_4#readme"
+}

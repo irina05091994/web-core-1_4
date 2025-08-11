@@ -1,0 +1,15 @@
+.logo-company{
+	width: 96.55px;
+	height: 50.81px;
+	order: 0;
+	flex-shrink: 0;
+
+    &--order{
+	    order:0;
+
+        @media (min-width: 768px) {
+		    order: -1;
+	    }
+    }
+
+}

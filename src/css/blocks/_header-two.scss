@@ -1,0 +1,38 @@
+@use "../base/variables" as *;
+
+.header-two{
+	display: flex;
+	gap:32px;
+	width: 100%; /* Используйте 100% для растяжения по всей ширине родительского элемента */
+	margin-top: 24px;
+	padding-bottom: 24px;
+
+    &__button-caption{
+	    display: flex;
+	    flex-wrap: nowrap;
+	    flex-direction: row;
+	    align-items: center;
+	    gap: 8px;
+	    border: none;
+	    background-color: inherit;
+	    font-family: $font-medium;
+	    font-size: 16px;
+	    line-height: 24px;
+	    letter-spacing:-0.2px;
+	    font-weight: 500;
+	    padding:0;
+	    flex-shrink: 0;
+    }
+}
+
+@media (min-width: 768px) {
+	.header-two{
+		padding-bottom: 32px;
+	}
+}
+@media (min-width: 1440px) {
+	.header-two{
+		margin-top: 42px;
+		padding-bottom: 8px;
+	}
+}

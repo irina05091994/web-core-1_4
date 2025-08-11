@@ -1,0 +1,21 @@
+@use "../base/variables" as *;
+
+.fide-copy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 100%;
+    background: linear-gradient(to left, $gray-light, transparent);
+    pointer-events: none;
+    z-index: $z-index-overlay;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+
+}
+
+
+

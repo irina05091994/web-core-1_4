@@ -1,0 +1,9 @@
+
+.header__nav {
+	display: none;
+}
+@media (min-width: 1440px) {
+	.header__nav {
+		display: contents;
+	}
+}

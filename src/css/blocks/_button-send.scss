@@ -1,0 +1,15 @@
+.button-send{
+	background-image: url("/public/img/otp.svg");
+	width: 136px;
+	height: 32px;
+	border: none;
+	padding: 0;
+	box-shadow: none;
+	background-repeat: no-repeat;
+	border-radius: 16px;
+
+	&:hover{
+	    opacity: 0.5; 
+    }
+
+}

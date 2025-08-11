@@ -1,0 +1,18 @@
+@use "../base/variables" as *;
+
+
+.button-next{
+	display: flex;
+	justify-content:flex-start;
+	align-items:center;
+	gap: 8px;
+	width: 132px;
+	height: 24px;
+	font-family: $font-medium;
+	white-space: nowrap;
+	font-weight: 500;
+	font-size: 16px;
+	color: $black;
+	background: none;
+	border: none;
+}

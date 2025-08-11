@@ -1,0 +1,6 @@
+@use "../base/variables" as *;
+
+@mixin contrast-text-animation ($grey) {
+  color: $grey;
+  transition: transform 0.3s ease;
+}

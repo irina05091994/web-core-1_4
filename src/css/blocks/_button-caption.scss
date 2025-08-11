@@ -1,0 +1,28 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as *;
+
+.button-caption{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding: 0;
+
+    &--checkstatus{
+	    margin-right: 32px;
+	    flex-shrink: 0;
+    }
+
+    &--repair{
+	    padding: 0;
+    }
+
+    &--active:hover{
+	@include contrast-text-animation;
+    }
+}

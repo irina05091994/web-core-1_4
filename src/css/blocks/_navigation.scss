@@ -1,0 +1,76 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as*;
+
+.navigation{
+	width: max-content;
+	height: 40px;
+	padding: 0;
+	margin-left: 16px;
+	margin-bottom: 24px;
+
+    &__li{
+	    display:flex;
+	    gap: 10px;
+	    justify-content:center;
+	    flex-wrap: nowrap;
+	    align-items:center;
+	    height: 40px;
+	    box-sizing: border-box;
+	    width: auto;
+	    flex-direction: row;
+	    align-items: center;
+	    border: 2px solid transparent;
+	    background: $gray-light;
+
+          &--decoration{
+	            @include navigation-animation;
+            }
+
+          &:hover, &:active {
+                @include navigation-animation;
+          }  
+}
+   
+    &__ul{
+	    flex-wrap: nowrap;
+	    display:flex;
+	    padding: 0;
+	    list-style-type: none;
+	    margin: 0;
+    
+        @media (min-width: 1120px) {
+		    flex-wrap: wrap;
+		    overflow:inherit;
+		    margin-bottom: 8px;
+	    }
+    }
+
+    &__a{
+	    text-align: center;
+	    font-size: 16px;
+	    font-family: $font-medium;
+	    font-weight: 500;
+	    color: $gray-text;
+	    line-height: 24px;
+	    letter-spacing:-0.2px;
+	    text-decoration: none;
+	    white-space: nowrap;
+	    width: auto;
+	    padding: 8px 18px;
+	    margin:0;
+    }
+
+    @media (min-width: 768px) {
+		 margin-left: 32px;
+		 margin-bottom: 40px;
+    }
+
+    @media (min-width: 1120px) {
+		 width: auto;
+		 margin-left: 24px;
+		 height: 82px;
+		 flex-wrap: wrap;
+		 margin-bottom: 0;
+		 display:flex;
+	}
+}

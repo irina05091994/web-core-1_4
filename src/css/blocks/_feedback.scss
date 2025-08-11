@@ -1,0 +1,138 @@
+@use "../base/variables" as *;
+@use "../base/mixin" as*;
+
+.feedback {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-feedback;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+  background-color: $white;
+
+
+
+    &--hide{
+        display: none;
+    }
+
+
+    &__h2{
+	    font-size: 24px;
+	    font-family: $font-bold;
+	    font-weight: 700;
+	    color: $black;
+	    line-height: 32px;
+	    letter-spacing:-0.6px;
+	    padding: 0;
+	    margin:0;
+	    margin-top: 40px;
+	    padding-left: 32px;
+	    border-left: 3px solid $accent;
+
+            @media (min-width: 1440px) {
+    	        margin-top: 40px;
+	        }
+    }
+
+ 
+    &__form {
+        margin-top: 24px;
+        margin-left: 16px;
+        margin-right: 16px;
+        display: grid;
+	    justify-items: center;
+        gap: 16px;
+    }
+
+    &--blur{
+        @media (min-width: 768px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+        opacity: 96%;
+        backdrop-filter: blur(5px);
+        z-index: $z-index-blur;
+        filter: blur(8px);
+        }
+    }
+ 
+    &__input {
+        border: 1px solid $gray;
+        border-radius: 8px;
+        width: 288px;
+        height: 48px;
+        padding: 16px;
+	    box-sizing: border-box;
+
+         &::placeholder {
+            color: $placeholder-color;
+        }
+
+        &--textarea {
+            height: 118px;
+	    }
+
+        @media (min-width: 768px) {
+    	    width: 376px;
+    	}
+    }
+
+    &__list{
+	    display: grid;
+    }
+
+    &__text{
+ 	    font-size: 14px;
+	    font-family: $font-medium;
+	    font-weight: 500;
+	    color: $gray-text;
+	    line-height: 16px;
+	    letter-spacing: 0 px;
+	    width: 288px;
+
+        @media (min-width: 768px) {
+    	    width: 376px;
+    	}
+    }
+
+    &__link{
+	    text-decoration: none;
+	    color: $pink;
+    }
+
+    &__button-lap--close{
+	    margin-left: 16px;
+	    margin-top:24px;
+
+	    @media (min-width: 1440px) {
+	        position: absolute;
+	        left: -60px;   
+            right: auto;   
+	        top: 10px;
+	        transform: translateX(-50%);
+            border: none;
+	        z-index: $z-index-menu;
+        }
+
+    }
+
+    &__button-send{
+	    display: flex;
+	    justify-self: flex-end;
+	    margin-right: 32px;
+    }
+
+
+     @media (min-width: 768px) {
+    	left: unset;
+    	right: 0;
+    	width: 440px;
+		box-shadow: $shadow-feedback;
+    	}
+
+  }
