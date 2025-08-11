@@ -1,25 +1,6 @@
 @use "../base/variables" as *;
 
-.responsive-table-wrapper {
-    border-radius: 8px;
-    overflow: hidden;
-    box-sizing: border-box;
-
-
-    @media (min-width: 768px) {
-        width: 100%;
-        max-width: none;
-        height: auto;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-
-    @media (max-width: 767px) {
-	    display:none;
-    }
-}
-
-    .responsive-table {
+.responsive-table {
         display: table;
         border-collapse: collapse;
         border-radius: 8px;
@@ -34,7 +15,7 @@
 	            font-family: $font-medium;	
 	            color: $gray-text;
 	            text-align: start;
-                background-color: &gray;
+              background-color: $gray;
 	            padding:16px;
             }
 	 
@@ -55,5 +36,3 @@
             color: $gray-text;
           }
   
-
-

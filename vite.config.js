@@ -9,11 +9,11 @@ export default defineConfig({
 
   // Базовый путь — важен для GitHub Pages
   base: '/web-core-1_4/',
-
   build: {
     // Куда собирать
     outDir: 'dist',
-    // Очищать dist перед сборкой
+    cssCodeSplit: true,
+    
     emptyOutDir: true,
     // Подпапка для ассетов
     assetsDir: 'assets',

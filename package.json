@@ -29,7 +29,8 @@
     "last 1 Chrome version",
     "last 1 Firefox version"
   ],
-
-  "homepage": "https://github.com/irina05091994/web-core-1_4#readme"
-  
+  "homepage": "https://github.com/irina05091994/web-core-1_4#readme",
+  "dependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
